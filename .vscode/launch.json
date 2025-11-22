@@ -10,10 +10,14 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "api.main:app",
-                "--reload"
+                "main:app",
+                "--reload",
+                "--host", "0.0.0.0",
+                "--log-level", "debug"
             ],
+            "cwd": "${workspaceFolder}/api",
             "jinja": true
         }
+        
     ]
 }
